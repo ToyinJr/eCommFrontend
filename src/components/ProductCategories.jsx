@@ -19,7 +19,7 @@ const ProductCategories = () => {
         </Link>
 
         <div className="flex gap-4 overflow-x-scroll mt-2 mb-2">
-          {categories.map((category) => (
+          {categories?.map((category) => (
             <Link key={category.id} to={`/categories/${category.name.toLowerCase()}`}>
               <div className="border-2 shrink-0 border-emerald-500 p-4 min-w-52 hover:shadow-lg transition">
                 <img
